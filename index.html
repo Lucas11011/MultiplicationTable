@@ -1,0 +1,51 @@
+<!--
+File: index.html
+GUI Assignment 3
+Lucas Aurelio lucas_aurelio@student.uml.edu
+Copyright (c) 2024 by Lucas. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table!</title>
+
+    <link rel="stylesheet" href="hw3.css">
+</head>
+<body>
+    <header>
+        <h1>Multiplication Table Generator</h1>
+        <h3>By Lucas Aurelio</h3>
+    </header>
+
+    <!-- Form to ask for inputs -->
+    <form id="tableForm">
+        <label for="minRow">Minimum row value:</label>
+        <input type="text" id="minRow"><br><br>
+
+        <label for="maxRow">Maximum row value:</label>
+        <input type="text" id="maxRow"><br><br>
+        
+        <label for="minCol">Minimum column value:</label>
+        <input type="text" id="minCol"><br><br>
+
+        <label for="maxCol">Maximum column value:</label>
+        <input type="text" id="maxCol"><br><br>
+        
+        <button type="submit">Generate Table</button>
+
+        <!-- Error message -->
+        <p id="errorMessage"></p>
+    </form>
+
+    <div class="scrollable">
+        <table id="multiplicationTable"></table>
+    </div>
+
+    <script src="hw3.js"></script>
+</body>
+</html>
